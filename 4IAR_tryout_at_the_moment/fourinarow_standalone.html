@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<script src="./static/lib/jquery-min.js"></script>
+	<script src="./static/lib/jquery-ui.min.js"></script>
+	<script src="./static/lib/bootstrap.min.js"></script>
+	<script src="./static/lib/underscore-min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="./static/js/4inarow_tryoutboard.js"></script>
+	<script src="./static/js/4inarow_standalone.js"></script>
+	<script src="./static/scripts/Code/makemove.js"></script>
+
+	<link href="./static/css/lib/bootstrap-12/bootstrap.min.css" rel="stylesheet">
+	<link href='./static/css/stylesheet.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+	<div class="overlayed"></div>
+	<div class="popup" id="credentials">
+		<h4 style="font-size:4vh;text-align:center;">Instructions</h4>
+		<p>Please enter your id</p>
+		<div id="credentials_input">
+			<input type="text" placeholder=""></input>
+			<input type="submit" value="Submit" style="display:none"></input>
+		</div>
+	</div>
+	<div class="popup" id="instructions">
+		<h4 style="font-size:4vh;">Instructions</h4>
+		<input id="fullscreen" type="button" value="please click to enter fullscreen before you proceed"
+			style="-ms-grid-column-span: inherit;" onclick="toggleFullScreen(),style.display = 'none'">
+		<!-- change canvas size in  -->
+		<img src="" style="width:40vw;border:none"></img>
+
+		<button id="previousbutton" type="button" class="mybutton"
+			style="bottom:5%;left:43%;width:10%">Previous</button>
+		<button id="nextbutton" type="button" class="mybutton" style="bottom:5%;left:57%;width:10%">Next</button>
+	</div>
+
+
+
+	<div class='container-fluid text-center'>
+		<div class="row">
+			<div class="container-fluid col-xs-8 col-xs-offset-2 canvas-container">
+				<div class="canvas"></div>
+			</div>
+		</div>
+		<div class='row'>
+			<div class="headertext col-xs-8 col-xs-offset-2">
+				<h1>Your turn</h1>
+			</div>
+		</div>
+		<div class='row'>
+			<div class="col-xs-8 col-xs-offset-2">
+				<button type="button" class="mybutton" id="nextgamebutton" style="display:none">Next game</button>
+			</div>
+		</div>
+		<div class='row'>
+			<div class="col-xs-4 col-xs-offset-2">
+				<button type="button" class="mybutton" id="tryout" style="display:none">Open the tryout board</button>
+
+				<div id="myModal" class="modal">
+					<!-- Modal content -->
+					<div class="modal-content">
+						<!-- <span class="close" id="popup_close">&times;</span> -->
+						<div class='row'>
+							<div class="tryout-close col-xs-2">
+								<button type="button" class="mybutton" id="close-button" style="display:none"> Close
+								</button>
+							</div>
+						</div>
+						<div class="container-fluid col-xs-8 col-xs-offset-2 canvas-container">
+							<div class="tryout-canvas"></div>
+						</div>
+						<div class='row'>
+							<div class="popuptext col-xs-8 col-xs-offset-2"">
+								<h2>Your turn</h2>
+							</div>
+						</div>
+						<p>
+						<h4>* You are playing tryout board.</h4>
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+</body>
+<!-- <script>
+	document.body.innerHTML = '<p> <center> Please wait. You will be redirected to the next task in 10 seconds. Please click "
+								leave" when asked if you would like to leave this page. </center>
+								</p>'
+
+								window.open("../twostep.html",'_self');
+								</script> -->
+
+
+</html>
