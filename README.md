@@ -3,6 +3,11 @@
 codes for 4iar with tryout board.
 
 Have several versions of it, but didn't decide what version to use.
+* `./4IAR_original` : original standalone version of 4iar
+* `./4IAR_tryout_empty_board` : opens empty board. the progress on the board maintained until lose/win/draw.
+* `./4IAR_tryout_empty_board_onlyonce` : same as above but you can open only once.
+* `./4IAR_tryout_at_the_moment` : opens board with the current board position. 
+* `./4IAR_tryout_at_the_moment_onlyonce` : same as above but you can open only once.
 
 The latest discussion on what version to use:
 
